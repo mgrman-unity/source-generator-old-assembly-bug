@@ -5,6 +5,7 @@ This repository serves as a minimal reproduction for a bug I found with Source G
 
 # Steps
 
+- Install .NET 7 (tested with 7.0.306)
 - Run `dotnet build` in the `src` folder
 - In `src\TestGenerator\TestGenerator.cs` change the type name from `TestGenerator1` to `TestGenerator2`
 - Run `dotnet clean` in the `src` folder (otherwise the  build does not re-run)
